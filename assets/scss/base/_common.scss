@@ -14,3 +14,9 @@ a{
     display: inline-block;
     cursor: pointer;
 }
+.btn{
+    background-color: $bg-btn;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}

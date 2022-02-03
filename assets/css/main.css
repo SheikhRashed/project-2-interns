@@ -27,6 +27,13 @@ a {
   cursor: pointer;
 }
 
+.btn {
+  background-color: #0D90C2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .header__top__bg {
   background: rgba(39, 39, 39, 0.67);
   width: 100%;
@@ -201,14 +208,8 @@ a {
   margin: 25px 0;
 }
 
-.hero__section__content .hero__content .hero__btn__wrapper .custom__btn {
-  text-decoration: none;
-  display: inline-block;
+.hero__section__content .hero__content .hero__btn__wrapper .btn--meet-our-team {
   padding: 17px 46px;
-  background-color: #0d90c2;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 .about__section {
@@ -217,7 +218,6 @@ a {
   background-position: center center;
   background-size: cover;
   width: 100%;
-  overflow: hidden;
 }
 
 .about__section .ad__card__section {
@@ -228,8 +228,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -40px;
-  z-index: 1000;
 }
 
 .about__section .ad__card__section .card {
@@ -238,21 +236,98 @@ a {
   padding: 60px;
   color: #fff;
   text-align: center;
+  margin-top: -60px;
   z-index: 1000;
 }
 
-.about__section .ad__card__section .card .card-title {
-  font-weight: 500;
+.about__section .ad__card__section .card .card__title {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 10px;
 }
 
-.about__section .ad__card__section .card .card-text {
-  font-weight: 400;
+.about__section .ad__card__section .card .card__text {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.about__section .ad__card__section .card .btn--card {
+  padding: 17px 66px;
+  margin-top: 25px;
 }
 
 .about__section .ad__card__section .card--one {
   background-image: url("../images/img/membership-bg.png");
+  z-index: 1000;
 }
 
 .about__section .ad__card__section .card--two {
   background-image: url("../images/img/working-space-bg.png");
+  z-index: 1000;
+}
+
+.about__section .about__section__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.about__section .about__section__details--left {
+  max-width: 460px;
+}
+
+.about__section .about__section__details--left .section__title {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+
+.about__section .about__section__details--left .section__title h2 {
+  padding-bottom: 5px;
+}
+
+.about__section .about__section__details--left .section__title h2::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+}
+
+.about__section .about__section__details--left .section__description {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.about__section .about__section__details--left .section__description--one {
+  margin-bottom: 25px;
+}
+
+.about__section .about__section__details--left .section__description--two {
+  margin-bottom: 45px;
+}
+
+.about__section .about__section__details--right {
+  max-width: 460px;
 }
