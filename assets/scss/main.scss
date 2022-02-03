@@ -1,12 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-.inner__width {
-  max-width: 1200px;
-  margin: 0 auto
-}
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "base/reset";
+@import "base/common";
 @import "base/typography";
 @import "layout/header";
