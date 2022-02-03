@@ -6,7 +6,11 @@
   max-width: 1200px;
   margin: 0 auto
 }
+ul{
+    list-style: none;
+}
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "base/typography";
-@import "layout/header";
+@import "layout/hero-section";
