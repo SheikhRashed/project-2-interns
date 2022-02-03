@@ -331,3 +331,47 @@ a {
 .about__section .about__section__details--right {
   max-width: 460px;
 }
+
+.footer__section {
+  background: #121212;
+  padding-top: 75px;
+  min-height: 525px;
+}
+
+.footer__section .footer__widget {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__section .footer__widget .footer__widget__title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 45px;
+}
+
+.footer__section .footer__widget .footer__widget__text {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.footer__section .footer__widget--four .footer__widget__text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__section .footer__widget--four .footer__widget__text ul li {
+  padding-right: 25px;
+}
