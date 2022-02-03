@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2, h3, h4, h5, h6{
+    font-family: 'Source Code Pro', monospace;
+}
 
 .container{
     max-width: $inner_width;
