@@ -149,7 +149,10 @@
 }
 
 @media screen and (max-width: 425px) {
-    .header__top{
+
+    .hero__section{
+        height: auto;
+        .header__top{
         display: none!important;
     }
     .header__navbar{
@@ -160,5 +163,6 @@
                 top: 50%;
             }
         }
+    }
     }
 }
