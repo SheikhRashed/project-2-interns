@@ -10,7 +10,8 @@
         justify-content: space-between;
         
         .card{
-            max-width: 460px;
+            flex: 0 0 50%;
+            margin: 0 10px;
             height: 400px;
             padding: 60px;
             color: #fff;
