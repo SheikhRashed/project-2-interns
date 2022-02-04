@@ -4,6 +4,8 @@
         padding: 0 120px;
         overflow: hidden;
         .section__title{
+            font-family: 'Source Code Pro', monospace;
+            text-transform: uppercase;
                     &::after{
                         content: "";
                         display: block;

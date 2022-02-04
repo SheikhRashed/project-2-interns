@@ -4,7 +4,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 45px 0;
+       .logo{
+           .nav_icon{
+               display: none;
+           }
+       }
+       .mobile_menu{
+        display: none;
+    }
         .menu{
+            display: block;
             ul{
                 list-style: none;
                 li{
@@ -26,5 +35,6 @@
                 }
             }
         }
+      
     }
 }
