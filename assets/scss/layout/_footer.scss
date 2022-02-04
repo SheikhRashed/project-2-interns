@@ -27,11 +27,14 @@
         &--three{
             .footer__widget__text{
                 .footer__form{
-                    input{
+                    input, button{
                         width: 100%;
                         display: block;
                         padding: 12px 20px;
                         margin-top: 20px;
+                    }
+                    button{
+                        cursor:pointer;
                     }
                 }
             }
