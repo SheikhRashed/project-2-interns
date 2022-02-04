@@ -1,0 +1,26 @@
+.partner__section{
+    padding: 100px 0;
+    .partner__section__content{
+        padding: 0 120px;
+        overflow: hidden;
+        .section__title{
+                    &::after{
+                        content: "";
+                        display: block;
+                        clear: both;
+                        width: 30px;
+                        height: 4px;
+                        margin-top: 10px;
+                        background: #0D90C2;
+                    }   
+        }
+        .partner__brand__images{
+            display: flex;
+            justify-content: space-between;
+            padding: 90px 0px;
+            div{
+                align-self: end;
+            }
+        }
+    }
+}
