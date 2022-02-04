@@ -2,6 +2,7 @@
     background: #121212;
     padding-top: 75px ; 
     min-height: 525px;
+    position: relative;
     .footer__widget{
         color: #fff;
         display: flex;
@@ -23,6 +24,18 @@
             line-height: 200%;
             
         }
+        &--three{
+            .footer__widget__text{
+                .footer__form{
+                    input{
+                        width: 100%;
+                        display: block;
+                        padding: 12px 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
         &--four{
             .footer__widget__text{
                 ul{
@@ -31,7 +44,18 @@
                         padding-right: 25px;
                     }
                 }
+                
             }
         }
+    }
+    .footer__left__svg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .footer__right__svg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 }

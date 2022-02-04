@@ -280,11 +280,10 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 140%;
-  margin-bottom: 25px;
 }
 
 .about__section .about__section__details--left .section__title h2 {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .about__section .about__section__details--left .section__title h2::after {
@@ -293,6 +292,7 @@ a {
   clear: both;
   width: 30px;
   height: 4px;
+  margin-top: 10px;
   background: #fff;
 }
 
@@ -582,11 +582,10 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 140%;
-  margin-bottom: 25px;
 }
 
 .about__section .about__section__details--left .section__title h2 {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .about__section .about__section__details--left .section__title h2::after {
@@ -595,6 +594,7 @@ a {
   clear: both;
   width: 30px;
   height: 4px;
+  margin-top: 10px;
   background: #fff;
 }
 
@@ -626,6 +626,7 @@ a {
   background: #121212;
   padding-top: 75px;
   min-height: 525px;
+  position: relative;
 }
 
 .footer__section .footer__widget {
@@ -656,6 +657,13 @@ a {
   line-height: 200%;
 }
 
+.footer__section .footer__widget--three .footer__widget__text .footer__form input {
+  width: 100%;
+  display: block;
+  padding: 12px 20px;
+  margin-top: 20px;
+}
+
 .footer__section .footer__widget--four .footer__widget__text ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,6 +672,18 @@ a {
 
 .footer__section .footer__widget--four .footer__widget__text ul li {
   padding-right: 25px;
+}
+
+.footer__section .footer__left__svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__section .footer__right__svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 425px) {
