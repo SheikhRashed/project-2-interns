@@ -1,9 +1,10 @@
-.feature_section, .blog_section{
+.feature_section{
     background-color: #F5F5F5;
-}
-.feature__area{
+    overflow: hidden;
+    .feature__area{
     padding: 50px;
     background-color: #ffffff;
+    
     p{
         padding: 10px 50px;
         width:50%;
@@ -41,9 +42,13 @@
     }
     }
 }
+    
+}
+
 
 .blog_section{
     position:relative;
+    background-color: #F5F5F5;
     .vector_img{
         position: absolute;
         bottom: 0;

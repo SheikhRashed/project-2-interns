@@ -4,6 +4,7 @@
     background-position: center center;
     background-size: cover;
     width: 100%;
+    z-index: 1;
     .ad__card__section{
         display: flex;
         padding: 0 120px;
@@ -16,7 +17,7 @@
             color: #fff;
             text-align: center;
             margin-top: -60px;
-            z-index: 1000;
+            z-index: 10;
             .card__title{
                 font-family: Source Code Pro;
                 font-style: normal;
@@ -38,20 +39,21 @@
             }
             &--one{
                 background-image: url("../images/img/membership-bg.png");
-                z-index: 1000;
+                z-index: 10;
             }
             &--two{
                 background-image: url("../images/img/working-space-bg.png");
-                z-index: 1000;
+                z-index: 10;
             }
         }
     }
     .about__section__details{
         display: flex;
-        padding: 0 120px;
+        padding: 0 120px 60px;
         align-items: center;
         justify-content: space-between;
         color: #fff;
+        z-index: -1;
         &--left{
             max-width: 460px;
             .section__title{
@@ -80,6 +82,7 @@
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 160%;
+                z-index: 1;
                 &--one{
                     margin-bottom: 25px;
                 }
