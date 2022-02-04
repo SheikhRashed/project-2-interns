@@ -722,6 +722,26 @@ a {
 }
 
 @media screen and (max-width: 425px) {
+  .about__section .ad__card__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+  }
+  .about__section .ad__card__section .card {
+    width: 300px;
+    padding: 10px;
+    margin-top: 0px;
+    margin: 10px 0;
+  }
+  .about__section .about__section__details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 20px;
+  }
   .feature__area p {
     padding: 10px;
     width: 100%;
@@ -770,5 +790,44 @@ a {
   }
   .blog_section .vector_img {
     right: 25px;
+  }
+  .partner__section {
+    padding: 30px 0;
+  }
+  .partner__section .partner__section__content {
+    padding: 0 20px;
+  }
+  .partner__section .partner__section__content .partner__brand__images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partner__section .partner__section__content .partner__brand__images div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .partner__section .partner__section__content .partner__brand__images div img {
+    margin: 15px 0;
+  }
+  .footer__section .footer__widget {
+    padding: 0px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__section .footer__widget .footer__widget__title {
+    padding-bottom: 10px;
+  }
+  .footer__section .footer__widget--one, .footer__section .footer__widget--two, .footer__section .footer__widget--three, .footer__section .footer__widget--four {
+    margin-bottom: 20px;
   }
 }
