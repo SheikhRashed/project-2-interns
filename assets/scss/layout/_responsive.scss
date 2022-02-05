@@ -14,18 +14,17 @@
     }
     // About Section Start
     .about{
-      .about__card__wrapper{
-        .single__card{
-          padding: 20px;
+        .about__card__wrapper{
+            .single__card{
+            padding: 20px;
+            }
         }
-      }
-        .about__content{
-         
-                .about__content__signature{
+        .about__content{ 
+            .about__content__signature{
                     margin-top: 46px;
                 }
-            }    
-        }
+        }    
+    }
     // About Section End
     .blog {
       margin-top: -30px;
@@ -58,18 +57,15 @@
       }
     }
     .footer{
-    .footer__widgets{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
-        .footer__widget__title{
-            padding-bottom: 15px;
+        .footer__widgets{
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            .footer__widget__title{
+                padding-bottom: 15px;
+            }
         }
     }
 }
-}
-
-
-/* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 768px) {
   .container{
@@ -156,20 +152,10 @@
         grid-template-columns: 1fr;
         grid-gap: 10px;
         .footer__widget__title{
-            font-family: 'Source Code Pro', monospace;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 23px;
-            padding-bottom: 45px;
+            padding-bottom: 15px;
         }
         .footer__widget__text{
-            font-family: 'Nunito Sans', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 200%;
-            
+            margin-bottom: 20px;    
         }
         .footer__widget--three{
             .footer__widget__text{
@@ -186,9 +172,11 @@
             }
         }
         .footer__widget--four{
+            
             .footer__widget__text{
                 ul{
                     display: flex;
+                    
                     li{
                         padding-right: 25px;
                         &:last-child{
@@ -309,6 +297,13 @@
         }
         .footer__widget__text{
            margin-bottom: 20px; 
+        }
+        .footer__widget--four{
+            .footer__widget__text{
+            ul{
+                justify-content: center;
+            }
+        }
         }
 
     }
