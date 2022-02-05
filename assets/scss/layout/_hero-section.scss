@@ -33,8 +33,12 @@
 
     .hero__btn__wrapper {
       margin: 25px 0;
+      text-align: center;
       .btn--meet-our-team {
-        padding: 17px 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
       }
     }
   }

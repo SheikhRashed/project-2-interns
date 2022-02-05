@@ -94,65 +94,70 @@
 
 	<main>
 		<!-- about -->
-		<section class="about__section">
+		<section class="about">
 			<div class="container">
-				<div class="ad__card__section">
-					<div class="card card--one">
-						<div class="card__icon">
+				<div class="about__card__wrapper">
+					<div class="single__card single__card--one" 
+					style="background: url(./assets/images/img/membership-bg.png);
+					background-size: cover; background-repeat: no-repeat;">
+						<div class="single__card__icon">
 							<img src="./assets/images/icon/membership_icon.svg" alt="">
 						</div>
-						<div>
-							<h2 class="card__title">
+						<div class="single__card__title">
+							<h2>
 								Membership
 							</h2>
 						</div>
-						<div>
-							<p class="card__text">
+						<div class="single__card__text">
+							<p>
 								Join our community of Lawyers engaged in the tech and entrepreneurship space and enjoy LawyersHub member benefits.
 							</p>
 						</div>
-						<div>
+						<div class="single__card__btn">
 							<a class="btn btn--card">
 							More Details
-						</a>
+							</a>
 						</div>
 					</div>
-					<div class="card card--two">
-						<div class="card__icon">
+					<div class="single__card single__card--two"
+						style="background: url(./assets/images/img/working-space-bg.png);
+					background-size: cover; background-repeat: no-repeat;"
+					>
+						<div class="single__card__icon">
 							<img src="./assets/images/icon/working_space-icon.png" alt="">
 						</div>
-						<div>
-							<h2 class="card__title">
+						<div class="single__card__title">
+							<h2>
 								Co-Working Space
 							</h2>
 						</div>
-						<div>
-							<p class="card__text">
+						<div class="single__card__text">
+							<p>
 								Set in Upperhill with close proximity to the Milimani Law Courts, our co-working space offers the ideal space to work & collaborate either daily, weekly or monthly.
 							</p>
 						</div>
-						<div>
+						<div class="single__card__btn">
 							<a class="btn btn--card">
 								More Details
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="about__section__details">
-					<div class="about__section__details--left">
-						<div class="section__title">
+				<div class="about__content">
+					<div class="about__content--left">
+						<div class="section__title about__section__title">
 							<h2>About Us</h2>
 						</div>
-						<div class="section__description">
-							<p class="section__description--one">The Lawyers Hub exists to provide a nexus between Law and Technology and uses technology as a leverage and improve access to justice and the business of law.</p>
-							<p class="section__description--two">Community of Lawyers in Africa promoting Access to Justice through Innovation and Technology.</p>
+						<div class="about__content__description">
+							<p>The Lawyers Hub exists to provide a nexus between Law and Technology and uses technology as a leverage and improve access to justice and the business of law.</p>
+							<p>Community of Lawyers in Africa promoting Access to Justice through Innovation and Technology.</p>
 						</div>
-						<div class="signature">
+						<div class="about__content__signature">
 							<img src="./assets/images/img/Linda Bonyo.png" alt="">
-							<p class="designation">Founder of the Lawyers Hub</p>
+							<p class="about__content__designation">Founder of the Lawyers Hub</p>
 						</div>
 					</div>
-					<div class="about__section__details--right">
+					<div class="about__content--right">
 						<img src="./assets/images/img/person.png" alt="">
 					</div>
 				</div>
@@ -259,10 +264,10 @@
 	</main>
 
 	<!-- Footer Section -->
-	<footer class="footer__section">
+	<footer class="footer">
 		<div class="container">
-			<div class="footer__widget">
-				<div class="footer__widget--one">
+			<div class="footer__widgets">
+				<div class=" footer__widget footer__widget--one">
 					<h2 class="footer__widget__title">
 						Adress
 					</h2>
@@ -270,7 +275,7 @@
 						<p>Bishop Road First Ngong <br> Ave, Nairobi, Kenya</p>
 					</div>
 				</div>
-				<div class="footer__widget--two">
+				<div class="footer__widget footer__widget--two">
 					<h2 class="footer__widget__title">
 						Contact
 					</h2>
@@ -280,7 +285,7 @@
 							Phone: +254 784 840 228</p>
 					</div>
 				</div>
-				<div class="footer__widget--three">
+				<div class="footer__widget footer__widget--three">
 					<h2 class="footer__widget__title">
 						Newsletter
 					</h2>
@@ -288,11 +293,11 @@
 						<p>Stay updated by subscribing to <br>our newsletter</p>
 						<form class="footer__form">
 							<input type="email" name="" id="" placeholder="youraddress@gmail.com">
-							<button type="submit">Subscribe</button>
+							<input class="btn btn--form" type="submit" value="Subscribe">
 						</form>
 					</div>
 				</div>
-				<div class="footer__widget--four">
+				<div class="footer__widget footer__widget--four">
 					<h2 class="footer__widget__title">
 						Follow Us
 					</h2>
@@ -307,8 +312,12 @@
 				</div>
 			</div>
 		</div>
-		<img class="footer__left__svg" src="./assets/images/icon/footer_left.svg" alt="">
-		<img class="footer__right__svg" src="./assets/images/icon/footer-right.svg" alt="">
+		<div class="footer__svg footer__svg--left">
+			<img src="./assets/images/icon/footer_left.svg" alt="">
+		</div>
+		<div class="footer__svg footer__svg--right">
+			<img src="./assets/images/icon/footer-right.svg" alt="">
+		</div>
 	</footer>
 
 	<script src="assets/js/main.js"></script>
