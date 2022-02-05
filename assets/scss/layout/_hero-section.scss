@@ -4,7 +4,7 @@
 .hero__section {
   background-image: url(../images/img/Banner-bg.png);
   width: 100%;
-  min-height: 1100px;
+  //min-height: 1100px;
   // height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -15,18 +15,19 @@
   text-align: center;
   color: #fff;
   .hero__content {
+    padding: 230px 40px;
     .hero__title {
-      font-size: 80px;
+      font-size: 70px;
       font-weight: 700;
-      line-height: 112px;
+      line-height: 80px;
     }
     .hero__sub__title {
-      font-size: 33px;
+      font-size: 28px;
       line-height: 46px;
       font-weight: 700;
     }
     .hero__text {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 29px;
     }
