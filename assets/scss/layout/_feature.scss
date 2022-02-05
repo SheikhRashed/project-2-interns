@@ -59,21 +59,19 @@
     padding: 50px;
     .blog_top{
         &_text{
-            h2{
+            .section__title {
                 font-family: 'Source Code Pro', monospace;
-                padding: 10px 50px;
-                position: relative;
-               text-transform: uppercase;
+                text-transform: uppercase;
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height:4px;
+                    clear: both;
+                    background: #0D90C2;
+                    margin-top: 4px;
+                }
             }
-            h2::after{
-                content: "";
-                width: 25px;
-                height: 3px;
-                background: #0D90C2;
-                position: absolute;
-                left: 51px;
-                bottom: 0;
-              }
             p{
                 padding: 10px 50px;
                 width: 50%;
