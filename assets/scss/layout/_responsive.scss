@@ -153,13 +153,6 @@
 }
 
 @media screen and (max-width: 425px) {
-<<<<<<< HEAD
-
-    .hero__section{
-        height: auto;
-        .header__top{
-        display: none!important;
-=======
     .hero__section {
         background-image: url(../images/img/Banner-bg.png);
         width: 100%;
@@ -167,7 +160,6 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
->>>>>>> 64d64eb865112ea2121273b952b6f63b5e4c82a9
     }
     .header__top__bg {
         background: rgba(39, 39, 39, 0.67);
@@ -242,8 +234,6 @@
             }
         }
     }
-<<<<<<< HEAD
-=======
     .about__section__details {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
@@ -258,6 +248,5 @@
         padding: 10px;
         margin-top: 0px;
         margin: 10px 0;
->>>>>>> 64d64eb865112ea2121273b952b6f63b5e4c82a9
     }
 }
