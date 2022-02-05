@@ -95,7 +95,7 @@
     width: 100%;
   }
   .blog_area .blog_cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
   .blog_area .blog_cards_1 {
@@ -282,7 +282,7 @@
   .blog_area {
       padding: 10px;
   .blog_cards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 0px;
     padding: 0px 10px;
   }
