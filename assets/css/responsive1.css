@@ -1,5 +1,109 @@
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Medium Layout: 1280px. */
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .feature__wrapper {
+    padding: 30px 10px;
+  }
+  .feature__wrapper .feature__top p {
+    padding: 15px;
+  }
+  .partner__brands {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partner__brands--single {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .feature__wrapper {
+    padding: 30px 10px;
+  }
+  .feature__wrapper .feature__top p {
+    padding: 15px;
+  }
+  .partner__brands {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partner__brands--single {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .feature__wrapper {
+    padding: 30px 10px;
+  }
+  .feature__wrapper .feature__top p {
+    padding: 15px;
+  }
+  .blog {
+    margin-top: -30px;
+  }
+  .blog__wrapper .blog__top p {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .partner {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+  .partner__brands {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partner__brands--single {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .blog__wrapper .blog__cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .blog__wrapper .blog__cards--single-body {
+    padding-bottom: 15px;
+  }
+  .vector_img {
+    display: none;
+  }
+}

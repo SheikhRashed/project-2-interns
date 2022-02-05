@@ -44,6 +44,9 @@
                     display: flex;
                     li{
                         padding-right: 25px;
+                        &:last-child{
+                            padding-right: 0px;
+                        }
                     }
                 }
                 
