@@ -6,13 +6,15 @@
         display: grid;
         grid-gap:20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
         &--single{
             width: 150px;
             height: 150px;
-            margin: 50px auto;
-            img{
-                
-            }
+            padding-top: 50px;
+            text-align: center;
+           img{
+               height: 50px;
+           }
         }
     }
     

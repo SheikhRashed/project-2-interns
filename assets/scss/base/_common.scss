@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
+
 body{
     font-family: 'Montserrat', sans-serif;
     background-color:#F5F5F5;
-    ;
 }
 h1,h2, h3, h4, h5, h6{
     font-family: 'Source Code Pro', monospace;
 }
-
-
-
 .container{
     max-width: 83.33%;
     margin: 0 auto;
@@ -40,10 +37,9 @@ img{
         background-color: #000;
     }
 }
-.section__title{
-                                           
+.section__title{                            
                 h2{
-                    font-family: 'Source Code Pro', monospace;
+                    font-family:'Source Code Pro', monospace;
                     text-transform: uppercase;
                     font-weight: 700;
                     font-size: 18px;
@@ -56,10 +52,7 @@ img{
                         width: 30px;
                         height: 4px;
                         margin-top: 10px;
-                        background: #fff;
+                        background: #0D90C2;
                     }
                 }
 }
-
-
-
