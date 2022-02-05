@@ -63,13 +63,20 @@
       }
     }
     .about__section__details {
-      padding: 40px 20px;
+        padding: 40px 20px;
+        flex-direction: column-reverse;
     }
   }
-  .feature__area p {
-    padding: 10px;
-    width: 100%;
-  }
+  .feature__section {
+      .feature__area{
+          top: -35px;
+          p {
+        padding: 10px;
+        width: 100%;
+    }
+}
+}
+  .feature__area 
   .feature__area_content {
     display: flex;
     flex-wrap: wrap;
@@ -88,10 +95,8 @@
     width: 100%;
   }
   .blog_area .blog_cards {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
   .blog_area .blog_cards_1 {
     flex: 0 0 48%;
@@ -146,6 +151,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    .hero__content{
+        .hero__title{
+            font-size: 60px;
+            line-height: 80px;
+        }
+    }
   }
   .header__top__bg {
     background: rgba(39, 39, 39, 0.67);
@@ -238,18 +249,19 @@
     padding: 25px 20px;
   }
 
-  .feature_section .feature__area {
+  .feature__section .feature__area {
     padding: 0px; 
     background-color: #ffffff;
+    top: -25px;
   }
-  .feature_section .feature__area p {
+  .feature__section .feature__area p {
     padding: 10px 50px;
    width: 100%; 
     line-height: 25px;
     font-weight: 400;
     font-size: 16px;
   }
-  .feature_section .feature__area_content {
+  .feature__section .feature__area_content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -267,12 +279,32 @@
   .feature__area_content--right {
     padding-top: 0;
   }
-
+  .blog_area {
+      padding: 10px;
+  .blog_cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+    padding: 0px 10px;
+  }
+}
   .blog_area .blog_cards_1 {
     flex: 0 0 100%;
     margin-bottom: 20px;
   }
   .blog_area .blog_cards .mx {
     margin-bottom: 20px;
+  }
+  .footer__section{
+      .footer__left__svg{
+        width: 80%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .footer__right__svg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
   }
 }

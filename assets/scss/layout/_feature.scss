@@ -1,10 +1,10 @@
-.feature_section{
+.feature__section{
     background-color: #F5F5F5;
-    overflow: hidden;
     .feature__area{
     padding: 50px;
     background-color: #ffffff;
-    
+    position: relative;
+    top: -65px;
     p{
         padding: 10px 50px;
         width:50%;
@@ -25,9 +25,7 @@
             display:-webkit-box;
             display:-ms-flexbox;
             display:flex;
-            -webkit-box-align:center;
-                -ms-flex-align:center;
-                    align-items:center;
+            align-items:center;
                     img{
                         display: inline-block;
                         padding-right: 10px;
@@ -86,12 +84,9 @@
     .blog_cards{
         margin-top: 30px;
         padding: 20px 50px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        .mx{
-            margin: 0 30px;
-        }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
         &_1{
             -webkit-box-flex: 0;
             -ms-flex: 0 0 33.33%;
