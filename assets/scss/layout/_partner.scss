@@ -1,28 +1,20 @@
-.partner__section{
-    padding: 100px 0;
-    .partner__section__content{
-        padding: 0 120px;
-        overflow: hidden;
-        .section__title{
-            font-family: 'Source Code Pro', monospace;
-            text-transform: uppercase;
-                    &::after{
-                        content: "";
-                        display: block;
-                        clear: both;
-                        width: 30px;
-                        height: 4px;
-                        margin-top: 10px;
-                        background: #0D90C2;
-                    }   
-        }
-        .partner__brand__images{
-            display: flex;
-            justify-content: space-between;
-            padding: 90px 0px;
-            div{
-                align-self: end;
+.partner{
+    background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    &__brands{
+        display: grid;
+        grid-gap:20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        &--single{
+            width: 150px;
+            height: 150px;
+            margin: 50px auto;
+            img{
+                width: 100%;
+                height: 100%;
             }
         }
     }
+    
 }
