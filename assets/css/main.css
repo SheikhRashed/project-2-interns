@@ -44,6 +44,12 @@ img {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.btn:hover {
+  background-color: #000;
 }
 
 .header__top__bg {
@@ -504,13 +510,11 @@ img {
   padding: 20x 0;
 }
 
-.blog_area .blog_cards_1_body .btn_primary {
+.blog_area .blog_cards_1_body .btn__blog {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
-  background-color: #0D90C2;
   padding: 10px 30px;
   margin: 30px 0;
 }
