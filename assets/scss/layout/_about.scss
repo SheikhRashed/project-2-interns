@@ -1,4 +1,4 @@
-.about__section{
+.about{
     background-image: url("../images/img/about-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -25,7 +25,7 @@
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 140%;
-                margin-bottom: 10px;
+                margin: 10px 0px;
             }
             .card__text{
                 font-family: Nunito;
@@ -35,8 +35,11 @@
                 line-height: 160%;
             }
             .btn--card{
-                padding: 17px 66px;
                 margin-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 45px auto;
             }
             &--one{
                 background-image: url("../images/img/membership-bg.png");

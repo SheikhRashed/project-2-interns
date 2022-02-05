@@ -44,8 +44,10 @@ img {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  -webkit-transition: all ease 0.8s;
-  transition: all ease 0.8s;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  width: 175px;
+  height: 46px;
 }
 
 .btn:hover {
@@ -238,7 +240,7 @@ img {
   padding: 17px 46px;
 }
 
-.about__section {
+.about {
   background-image: url("../images/img/about-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -247,7 +249,7 @@ img {
   z-index: 1;
 }
 
-.about__section .ad__card__section {
+.about .ad__card__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +259,7 @@ img {
           justify-content: space-between;
 }
 
-.about__section .ad__card__section .card {
+.about .ad__card__section .card {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
@@ -270,16 +272,16 @@ img {
   z-index: 10;
 }
 
-.about__section .ad__card__section .card .card__title {
+.about .ad__card__section .card .card__title {
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 140%;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
-.about__section .ad__card__section .card .card__text {
+.about .ad__card__section .card .card__text {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -287,22 +289,31 @@ img {
   line-height: 160%;
 }
 
-.about__section .ad__card__section .card .btn--card {
-  padding: 17px 66px;
+.about .ad__card__section .card .btn--card {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 45px auto;
 }
 
-.about__section .ad__card__section .card--one {
+.about .ad__card__section .card--one {
   background-image: url("../images/img/membership-bg.png");
   z-index: 10;
 }
 
-.about__section .ad__card__section .card--two {
+.about .ad__card__section .card--two {
   background-image: url("../images/img/working-space-bg.png");
   z-index: 10;
 }
 
-.about__section .about__section__details {
+.about .about__section__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,11 +328,11 @@ img {
   z-index: -1;
 }
 
-.about__section .about__section__details--left {
+.about .about__section__details--left {
   max-width: 460px;
 }
 
-.about__section .about__section__details--left .section__title {
+.about .about__section__details--left .section__title {
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: bold;
@@ -329,11 +340,11 @@ img {
   line-height: 140%;
 }
 
-.about__section .about__section__details--left .section__title h2 {
+.about .about__section__details--left .section__title h2 {
   padding-bottom: 10px;
 }
 
-.about__section .about__section__details--left .section__title h2::after {
+.about .about__section__details--left .section__title h2::after {
   content: "";
   display: block;
   clear: both;
@@ -343,7 +354,7 @@ img {
   background: #fff;
 }
 
-.about__section .about__section__details--left .section__description {
+.about .about__section__details--left .section__description {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -352,19 +363,19 @@ img {
   z-index: 1;
 }
 
-.about__section .about__section__details--left .section__description--one {
+.about .about__section__details--left .section__description--one {
   margin-bottom: 25px;
 }
 
-.about__section .about__section__details--left .section__description--two {
+.about .about__section__details--left .section__description--two {
   margin-bottom: 45px;
 }
 
-.about__section .about__section__details--right {
+.about .about__section__details--right {
   max-width: 460px;
 }
 
-.about__section .about__section__details--right img {
+.about .about__section__details--right img {
   width: 100%;
 }
 
@@ -566,18 +577,19 @@ img {
   position: relative;
 }
 
-.footer__section .footer__widget {
+.footer__section .footer__widgets {
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0 120px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.footer__section .footer__widget .footer__widget__title {
+.footer__section .footer__widgets .footer__widget__title {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -586,7 +598,7 @@ img {
   padding-bottom: 45px;
 }
 
-.footer__section .footer__widget .footer__widget__text {
+.footer__section .footer__widgets .footer__widget__text {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -594,35 +606,39 @@ img {
   line-height: 200%;
 }
 
-.footer__section .footer__widget--three .footer__widget__text .footer__form input, .footer__section .footer__widget--three .footer__widget__text .footer__form button {
+.footer__section .footer__widgets .footer__widget--three .footer__widget__text .footer__form input {
   width: 100%;
   display: block;
   padding: 12px 20px;
   margin-top: 20px;
+  border: none;
+  outline: none;
 }
 
-.footer__section .footer__widget--three .footer__widget__text .footer__form button {
-  cursor: pointer;
-}
-
-.footer__section .footer__widget--four .footer__widget__text ul {
+.footer__section .footer__widgets .footer__widget--four .footer__widget__text ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__section .footer__widget--four .footer__widget__text ul li {
+.footer__section .footer__widgets .footer__widget--four .footer__widget__text ul li {
   padding-right: 25px;
 }
 
-.footer__section .footer__left__svg {
+.footer__section .footer__svg {
   position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer__section .footer__svg--left {
   left: 0;
   bottom: 0;
 }
 
-.footer__section .footer__right__svg {
-  position: absolute;
+.footer__section .footer__svg--right {
   right: 0;
   bottom: 0;
 }
@@ -782,17 +798,15 @@ img {
   .footer__section {
     width: 100%;
   }
-  .footer__section .footer__widget {
+  .footer__section .footer__widgets {
     padding: 0px 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-  .footer__section .footer__widget .footer__widget__title {
+  .footer__section .footer__widgets .footer__widget__title {
     padding-bottom: 10px;
   }
-  .footer__section .footer__widget--one, .footer__section .footer__widget--two, .footer__section .footer__widget--three, .footer__section .footer__widget--four {
+  .footer__section .footer__widgets--one, .footer__section .footer__widgets--two, .footer__section .footer__widgets--three, .footer__section .footer__widgets--four {
     margin-bottom: 20px;
   }
 }
@@ -984,15 +998,28 @@ img {
   .blog_area .blog_cards .mx {
     margin-bottom: 20px;
   }
-  .footer__section .footer__left__svg {
-    width: 80%;
-    position: absolute;
-    left: 0;
-    top: 0;
+  .footer__section {
+    width: 100%;
   }
-  .footer__section .footer__right__svg {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  .footer__section .footer__widgets {
+    padding: 0px 20px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer__section .footer__widgets .footer__widget__title {
+    padding-bottom: 10px;
+  }
+  .footer__section .footer__widgets--one, .footer__section .footer__widgets--two, .footer__section .footer__widgets--three, .footer__section .footer__widgets--four {
+    margin-bottom: 20px;
+  }
+  .footer__section .footer__svg img {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .footer__section .footer__svg--left {
+    top: 0;
+    left: 0;
   }
 }

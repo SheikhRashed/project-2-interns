@@ -97,11 +97,11 @@
 
 	<main>
 		<!-- about -->
-		<section class="about__section">
+		<section class="about">
 			<div class="container">
-				<div class="ad__card__section">
-					<div class="card card--one">
-						<div class="card__icon">
+				<div class="about__card-wrapper">
+					<div class="single__card single__card--one">
+						<div class="single__card single__card--two">
 							<img src="./assets/images/icon/membership_icon.svg" alt="">
 						</div>
 						<div>
@@ -117,7 +117,7 @@
 						<div>
 							<a class="btn btn--card">
 							More Details
-						</a>
+							</a>
 						</div>
 					</div>
 					<div class="card card--two">
@@ -259,8 +259,8 @@
 	<!-- Footer Section -->
 	<footer class="footer__section">
 		<div class="container">
-			<div class="footer__widget">
-				<div class="footer__widget--one">
+			<div class="footer__widgets">
+				<div class=" footer__widget footer__widget--one">
 					<h2 class="footer__widget__title">
 						Adress
 					</h2>
@@ -268,7 +268,7 @@
 						<p>Bishop Road First Ngong <br> Ave, Nairobi, Kenya</p>
 					</div>
 				</div>
-				<div class="footer__widget--two">
+				<div class="footer__widget footer__widget--two">
 					<h2 class="footer__widget__title">
 						Contact
 					</h2>
@@ -278,7 +278,7 @@
 							Phone: +254 784 840 228</p>
 					</div>
 				</div>
-				<div class="footer__widget--three">
+				<div class="footer__widget footer__widget--three">
 					<h2 class="footer__widget__title">
 						Newsletter
 					</h2>
@@ -286,11 +286,11 @@
 						<p>Stay updated by subscribing to <br>our newsletter</p>
 						<form class="footer__form">
 							<input type="email" name="" id="" placeholder="youraddress@gmail.com">
-							<button type="submit">Subscribe</button>
+							<input class="btn btn--form" type="submit" value="Subscribe">
 						</form>
 					</div>
 				</div>
-				<div class="footer__widget--four">
+				<div class="footer__widget footer__widget--four">
 					<h2 class="footer__widget__title">
 						Follow Us
 					</h2>
@@ -305,8 +305,12 @@
 				</div>
 			</div>
 		</div>
-		<img class="footer__left__svg" src="./assets/images/icon/footer_left.svg" alt="">
-		<img class="footer__right__svg" src="./assets/images/icon/footer-right.svg" alt="">
+		<div class="footer__svg footer__svg--left">
+			<img src="./assets/images/icon/footer_left.svg" alt="">
+		</div>
+		<div class="footer__svg footer__svg--right">
+			<img src="./assets/images/icon/footer-right.svg" alt="">
+		</div>
 	</footer>
 
 	<script src="assets/js/main.js"></script>

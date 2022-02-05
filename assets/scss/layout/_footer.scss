@@ -3,9 +3,10 @@
     padding-top: 75px ; 
     min-height: 525px;
     position: relative;
-    .footer__widget{
+    .footer__widgets{
         color: #fff;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 0 120px;
         justify-content: space-between;
         .footer__widget__title{
@@ -24,22 +25,21 @@
             line-height: 200%;
             
         }
-        &--three{
+        .footer__widget--three{
             .footer__widget__text{
                 .footer__form{
-                    input, button{
+                    input{
                         width: 100%;
                         display: block;
                         padding: 12px 20px;
                         margin-top: 20px;
-                    }
-                    button{
-                        cursor:pointer;
+                        border: none;
+                        outline: none;
                     }
                 }
             }
         }
-        &--four{
+        .footer__widget--four{
             .footer__widget__text{
                 ul{
                     display: flex;
@@ -51,14 +51,16 @@
             }
         }
     }
-    .footer__left__svg{
+    .footer__svg{
         position: absolute;
-        left: 0;
-        bottom: 0;
-    }
-    .footer__right__svg{
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        user-select: none;
+        &--left{
+            left: 0;
+            bottom: 0;
+        }
+        &--right{
+            right: 0;
+            bottom: 0;
+        }
     }
 }

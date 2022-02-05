@@ -127,9 +127,9 @@
   }
   .footer__section {
     width: 100%;
-    .footer__widget {
+    .footer__widgets {
       padding: 0px 20px;
-      flex-direction: column;
+      grid-template-columns: 1fr 1fr;
       .footer__widget__title {
         padding-bottom: 10px;
       }
@@ -294,17 +294,30 @@
   .blog_area .blog_cards .mx {
     margin-bottom: 20px;
   }
-  .footer__section{
-      .footer__left__svg{
-        width: 80%;
-        position: absolute;
-        left: 0;
-        top: 0;
+  .footer__section {
+    width: 100%;
+    .footer__widgets {
+      padding: 0px 20px;
+      grid-template-columns: 1fr;
+      .footer__widget__title {
+        padding-bottom: 10px;
+      }
+      &--one,
+      &--two,
+      &--three,
+      &--four {
+        margin-bottom: 20px;
+      }
     }
-    .footer__right__svg{
-        position: absolute;
-        right: 0;
-        bottom: 0;
+      .footer__svg{
+          img{
+              user-select: none
+          };
+        &--left{
+            top: 0;
+            left: 0;
+        }
     }
   }
+  
 }
