@@ -337,6 +337,12 @@
     margin: 0 auto;
     padding:0 20px;
 }
+.feature__wrapper{
+  padding: 30px 10px;
+  .feature__top p {
+    padding: 15px;
+  }
+}
 .partner{
   &__brands{
       display: grid;
@@ -360,6 +366,12 @@
     margin: 0 auto;
     padding:0 20px;
 }
+.feature__wrapper{
+  padding: 30px 10px;
+  .feature__top p {
+    padding: 15px;
+  }
+}
   .partner{
     &__brands{
         display: grid;
@@ -379,11 +391,27 @@
 
 @media only screen and (max-width: 480px) {
   .container{
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     padding:0 20px;
 }
+.feature__wrapper{
+  padding: 30px 10px;
+  .feature__top p {
+    padding: 15px;
+  }
+}
+.blog {
+  margin-top: -30px;
+}
+.blog__wrapper .blog__top p {
+  padding: 20px 0;
+  width: 100%;
+}
 .partner{
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 34px;
   &__brands{
       display: grid;
       grid-gap:20px;
@@ -396,4 +424,13 @@
   }
   
 }   
+.blog__wrapper .blog__cards {
+  grid-template-columns: 1fr;
+  &--single-body{
+    padding-bottom: 15px;
+  }
+}
+.vector_img{
+  display: none;
+}
 }
