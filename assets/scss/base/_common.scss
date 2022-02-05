@@ -41,12 +41,13 @@ img{
     }
 }
 .section__title{
-                font-family: Source Code Pro;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 140%;                            
+                                           
                 h2{
+                    font-family: 'Source Code Pro', monospace;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px; 
                     padding-bottom: 10px;
                     &::after{
                         content: "";

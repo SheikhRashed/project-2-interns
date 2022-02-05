@@ -59,15 +59,12 @@ img {
   background-color: #000;
 }
 
-.section__title {
-  font-family: Source Code Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 140%;
-}
-
 .section__title h2 {
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
   padding-bottom: 10px;
 }
 
@@ -531,11 +528,6 @@ img {
   width: 150px;
   height: 150px;
   margin: 50px auto;
-}
-
-.partner__brands--single img {
-  width: 100%;
-  height: 100%;
 }
 
 .footer {
