@@ -38,7 +38,7 @@
         box-sizing: border-box;
         text-align: center;
         position: absolute;
-        top: 70%;
+        top: 45%;
         left: 0;
         z-index: 9999;
       }
@@ -236,6 +236,24 @@
   .about__section__details {
     flex-direction: column-reverse;
     padding: 25px 20px;
+  }
+
+  .feature_section .feature__area {
+    padding: 0px; 
+    background-color: #ffffff;
+  }
+  .feature_section .feature__area p {
+    padding: 10px 50px;
+   width: 100%; 
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .feature_section .feature__area_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
   }
 
   .feature__area_content--left,
