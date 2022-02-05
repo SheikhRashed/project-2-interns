@@ -9,7 +9,8 @@
         display: flex;
         justify-content: space-between;
         .single__card{
-            width: 48%;
+            flex:0 0 48%;
+            max-width: 100%;
             padding: 45px 60px;
             color: #fff;
             text-align: center;
