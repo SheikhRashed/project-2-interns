@@ -5,98 +5,74 @@
     background-size: cover;
     width: 100%;
     z-index: 1;
-    .ad__card__section{
+    .about__card__wrapper{
         display: flex;
-        padding: 0 120px;
         justify-content: space-between;
-        
-        .card{
-            flex: 0 0 50%;
-            margin: 0 10px;
+        .single__card{
             height: 400px;
+            width: 48%;
             padding: 60px;
             color: #fff;
             text-align: center;
             margin-top: -60px;
             z-index: 10;
-            .card__title{
-                font-family: Source Code Pro;
+            .single__card__title{
+                font-family: 'Source Code Pro', sans-serif;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 140%;
                 margin: 10px 0px;
             }
-            .card__text{
-                font-family: Nunito;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 160%;
+            .single__card__text{
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 160%;
+                    text-align: center;
+                    color: #FFFFFF;
             }
-            .btn--card{
-                margin-top: 25px;
+            .single__card__btn{
+                .btn--card{
+                    margin-top: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 45px auto;
-            }
-            &--one{
-                background-image: url("../images/img/membership-bg.png");
-                z-index: 10;
-            }
-            &--two{
-                background-image: url("../images/img/working-space-bg.png");
-                z-index: 10;
+                }
             }
         }
     }
-    .about__section__details{
+    .about__content{
         display: flex;
-        padding: 0 120px 60px;
+        padding-bottom: 60px;
         align-items: center;
         justify-content: space-between;
         color: #fff;
         z-index: -1;
         &--left{
-            max-width: 460px;
-            .section__title{
-                font-family: Source Code Pro;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 140%;
-                             
-                h2{
-                    padding-bottom: 10px;
-                    &::after{
-                        content: "";
-                        display: block;
-                        clear: both;
-                        width: 30px;
-                        height: 4px;
-                        margin-top: 10px;
-                        background: #fff;
-                    }
-                }
-            }
-            .section__description{
-                font-family: Nunito;
+            width: 48%;    
+            .about__content__description{
+                font-family: 'Nunito Sans', sans-serif;
                 font-style: normal;
                 font-weight: normal;
+                padding-top: 15px;
                 font-size: 16px;
                 line-height: 160%;
                 z-index: 1;
-                &--one{
-                    margin-bottom: 25px;
+                p{
+                    &:first-child{
+                    margin-bottom: 10px;
                 }
-                &--two{
-                    margin-bottom: 45px;
-                }
+            }
+            }
+            .about__content__signature{
+                margin-top: 46px;
             }
         }
         &--right{
-            max-width: 460px;
+            width: 48%;
             img{
                 width: 100%;
             }

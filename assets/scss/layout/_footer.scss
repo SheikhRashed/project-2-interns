@@ -1,4 +1,4 @@
-.footer__section{
+.footer{
     background: #121212;
     padding-top: 75px ; 
     min-height: 525px;
@@ -7,10 +7,9 @@
         color: #fff;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 0 120px;
-        justify-content: space-between;
+        grid-gap: 10px;
         .footer__widget__title{
-            font-family: Nunito;
+            font-family: 'Source Code Pro', monospace;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
@@ -18,7 +17,7 @@
             padding-bottom: 45px;
         }
         .footer__widget__text{
-            font-family: Nunito;
+            font-family: 'Nunito Sans', sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
