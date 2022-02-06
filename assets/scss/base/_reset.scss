@@ -1,10 +1,37 @@
-*, *::after, *::before{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+button {
+	border: 0px;
+	outline: none;
+	display: inline-block;
+	background-color: transparent;
+
+	&:hover,
+	&:active {
+		outline: none;
+	}
+}
+
+ul,
+ol {
+	list-style: none;
 }

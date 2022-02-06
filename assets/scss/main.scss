@@ -1,11 +1,19 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/reset";
-@import "base/common";
-@import "base/typography";
-@import "layout/hero-section";
-@import "layout/about";
-@import "layout/feature-blog";
-@import "layout/partner";
-@import "layout/footer";
-@import "layout/responsive";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/common';
+@import 'base/typography';
+
+// components
+@import 'components/blog-card';
+
+// layouts
+@import 'layout/header';
+@import 'layout/hero-section';
+@import 'layout/about';
+@import 'layout/feature-blog';
+@import 'layout/partner';
+@import 'layout/footer';
+// @import 'layout/responsive';
