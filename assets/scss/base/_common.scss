@@ -1,67 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color:#F5F5F5;
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f5f5f5;
 }
-h1,h2, h3, h4, h5, h6{
-    font-family: 'Source Code Pro', monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Source Code Pro', monospace;
 }
-.container{
-    max-width: 83.33%;
-    margin: 0 auto;
-    padding:0 120px;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 12px;
+	@include max(1200px) {
+		max-width: 100%;
+	}
+	&--sm {
+		max-width: 920px;
+	}
 }
-ul{
-    list-style: none;
+ul {
+	list-style: none;
 }
-a{
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
+a {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
 }
-img{
-    max-width: 100%;
-    object-fit: cover;
+img {
+	max-width: 100%;
+	object-fit: cover;
 }
-.btn{
-    background-color: $bg-btn;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    transition: all ease 0.3s;
-    width: 175px;
-    height: 46px;
-    text-align: center;
-    &:hover{
-        background-color: #000;
-    }
+.btn {
+	background-color: $bg-btn;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all ease 0.3s;
+	width: 175px;
+	height: 46px;
+	text-align: center;
+	&:hover {
+		background-color: #000;
+	}
 }
-.section__title{                            
-                h2{
-                    font-family:'Source Code Pro', monospace;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 25px; 
-                    padding-bottom: 10px;
-                    &::after{
-                        content: "";
-                        display: block;
-                        clear: both;
-                        width: 30px;
-                        height: 4px;
-                        margin-top: 10px;
-                        background: #0D90C2;
-                    }
-                }
+.section__title {
+	h2 {
+		font-family: 'Source Code Pro', monospace;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px;
+		padding-bottom: 10px;
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+			width: 30px;
+			height: 4px;
+			margin-top: 10px;
+			background: #0d90c2;
+		}
+	}
 }
 
-.btn--card{
-    margin-top: 25px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 45px auto;
+.btn--card {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 45px auto;
 }
-

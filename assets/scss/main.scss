@@ -6,6 +6,9 @@
 @import 'base/common';
 @import 'base/typography';
 
+// components
+@import 'components/blog-card';
+
 // layouts
 @import 'layout/header';
 @import 'layout/hero-section';
@@ -13,4 +16,4 @@
 @import 'layout/feature-blog';
 @import 'layout/partner';
 @import 'layout/footer';
-@import 'layout/responsive';
+// @import 'layout/responsive';
