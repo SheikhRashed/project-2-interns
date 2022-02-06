@@ -3,17 +3,17 @@
 
 // Base
 @import 'base/reset';
-@import 'base/common';
 @import 'base/typography';
 
 // components
+@import 'components/btn';
 @import 'components/blog-card';
 
 // layouts
 @import 'layout/header';
 @import 'layout/hero-section';
 @import 'layout/about';
-@import 'layout/feature-blog';
+@import 'layout/feature';
 @import 'layout/partner';
 @import 'layout/footer';
 // @import 'layout/responsive';
