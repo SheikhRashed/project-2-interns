@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LAWYERS HUB</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>LAWYERS HUB</title>
-	<link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body>
-	<header class="header">
-		<div class="header__top__bg">
-			<div class="container">
-				<div class="header__top">
-					<div class="header__top__left">
-						<h6><img src="assets/images/icon/call_24px.svg" alt=""> +254 784 840 228</h6>
-						<h6><img src="assets/images/icon/email.svg" alt=""> info@lawyershub.ke</h6>
+	<body>
+		<header class="header">
+			<div class="container header__top">
+				<div class="header__top-left">
+					<div>
+						<img src="assets/images/icon/call_24px.svg" alt="" /> +254 784 840
+						228
 					</div>
-					<div class="header__top__right">
-						<div class="social__icon">
-							<ul>
-								<li><a href="#"><img src="assets/images/icon/Path.svg" alt="" srcset=""></a></li>
-								<li><a href="#"><img src="assets/images/icon/twitter.svg" alt="" srcset=""></a></li>
-								<li><a href="#"><img src="assets/images/icon/linkedIn.svg" alt="" srcset=""></a></li>
-								<li><a href="#"><img src="assets/images/icon/instagram.svg" alt="" srcset=""></a></li>
-							</ul>
-						</div>
-
-						<div class="join__membership">
-							<a href="#"><img src="assets/images/icon/star.svg" alt="" srcset=""> <span>Join Our
-									Membership</span></a>
-						</div>
+					<div>
+						<img src="assets/images/icon/email.svg" alt="" />
+						info@lawyershub.ke
+					</div>
+				</div>
+				<div class="header__top-right">
+					<ul class="social-icon">
+						<li>
+							<a href="#"
+								><img src="assets/images/icon/Path.svg" alt="" srcset=""
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="assets/images/icon/twitter.svg"
+									alt=""
+									srcset=""
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="assets/images/icon/linkedIn.svg"
+									alt=""
+									srcset=""
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="assets/images/icon/instagram.svg"
+									alt=""
+									srcset=""
+							/></a>
+						</li>
+					</ul>
+					<div class="membership">
+						<a href="#"
+							><img src="assets/images/icon/star.svg" alt="" />
+							<span>Join Our Membership</span></a
+						>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="header__navbar">
-			<div class="container">
-				<div class="navbar">
-					<div class="logo">
-						<a href="#"><img src="assets/images/img/Logo.png" alt="" srcset=""></a>
+			<div class="header__nav">
+				<div class="container">
+					<div class="header__nav-logo">
+						<a href="#"
+							><img src="assets/images/img/Logo.png" alt="" srcset=""
+						/></a>
 
-						<a href="#" onclick="mobileMenu()" class="nav_icon"><img src="assets/images/icon/menu.png" alt=""></a>
+						<a href="#" onclick="mobileMenu()" class="nav_icon"
+							><img src="assets/images/icon/menu.png" alt=""
+						/></a>
 					</div>
-					<div class="menu">
+					<div class="header__nav-menu">
 						<ul>
 							<li><a href="#">Home</a></li>
 							<li><a href="#">Team</a></li>
@@ -58,8 +86,8 @@
 							<li><a href="#">Contacts</a></li>
 						</ul>
 					</div>
-					
-					<div class="mobile_menu" id="mobile_menu">
+
+					<div class="header__nav-mobile" id="mobileMenu">
 						<ul>
 							<li><a href="#">Home</a></li>
 							<li><a href="#">Team</a></li>
@@ -72,254 +100,338 @@
 							<li><a href="#">Contacts</a></li>
 						</ul>
 					</div>
-					
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<section class="hero__section">
-		<div class="container">
-			<div class="hero__content">
-				<h1 class="hero__title">LAWYERS HUB</h1>
-				<h3 class="hero__sub__title">A NEXUS BETWEEN LAW AND TECH</h3>
-				<p class="hero__text">We are a Community of Lawyers in Africa promoting <br> Access to Justice through
-					Innovation and Technology.</p>
-				<div class="hero__btn__wrapper">
-					<a href="#" class="btn btn--meet-our-team">Meet Our Team</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<main>
-		<!-- about -->
-		<section class="about">
+		<section class="hero-section">
 			<div class="container">
-				<div class="about__card__wrapper">
-					<div class="single__card single__card--one" 
-					style="background: url(./assets/images/img/membership-bg.png);
-					background-size: cover; background-repeat: no-repeat;">
-						<div class="single__card__icon">
-							<img src="./assets/images/icon/membership_icon.svg" alt="">
-						</div>
-						<div class="single__card__title">
-							<h2>
-								Membership
-							</h2>
-						</div>
-						<div class="single__card__text">
-							<p>
-								Join our community of Lawyers engaged in the tech and entrepreneurship space and enjoy LawyersHub member benefits.
-							</p>
-						</div>
-						<div class="single__card__btn">
-							<a class="btn btn--card">
-							More Details
-							</a>
-						</div>
-					</div>
-					<div class="single__card single__card--two"
-						style="background: url(./assets/images/img/working-space-bg.png);
-					background-size: cover; background-repeat: no-repeat;"
-					>
-						<div class="single__card__icon">
-							<img src="./assets/images/icon/working_space-icon.png" alt="">
-						</div>
-						<div class="single__card__title">
-							<h2>
-								Co-Working Space
-							</h2>
-						</div>
-						<div class="single__card__text">
-							<p>
-								Set in Upperhill with close proximity to the Milimani Law Courts, our co-working space offers the ideal space to work & collaborate either daily, weekly or monthly.
-							</p>
-						</div>
-						<div class="single__card__btn">
-							<a class="btn btn--card">
-								More Details
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="about__content">
-					<div class="about__content--left">
-						<div class="section__title about__section__title">
-							<h2>About Us</h2>
-						</div>
-						<div class="about__content__description">
-							<p>The Lawyers Hub exists to provide a nexus between Law and Technology and uses technology as a leverage and improve access to justice and the business of law.</p>
-							<p>Community of Lawyers in Africa promoting Access to Justice through Innovation and Technology.</p>
-						</div>
-						<div class="about__content__signature">
-							<img src="./assets/images/img/Linda Bonyo.png" alt="">
-							<p class="about__content__designation">Founder of the Lawyers Hub</p>
-						</div>
-					</div>
-					<div class="about__content--right">
-						<img src="./assets/images/img/person.png" alt="">
+				<div class="hero-section__content">
+					<h1>LAWYERS HUB</h1>
+					<h3>A NEXUS BETWEEN LAW AND TECH</h3>
+					<p>
+						We are a Community of Lawyers in Africa promoting <br />
+						Access to Justice through Innovation and Technology.
+					</p>
+					<div class="hero-section__btn-wrapper">
+						<a href="#" class="btn btn--meet-our-team">Meet Our Team</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- feature section -->
-		<section class="feature">
-			<div class="container feature__wrapper">
+		<main>
+			<!-- about -->
+			<section class="about">
+				<div class="container">
+					<div class="about__card__wrapper">
+						<div
+							class="single__card single__card--one"
+							style="
+								background: url(./assets/images/img/membership-bg.png);
+								background-size: cover;
+								background-repeat: no-repeat;
+							"
+						>
+							<div class="single__card__icon">
+								<img
+									src="./assets/images/icon/membership_icon.svg"
+									alt=""
+								/>
+							</div>
+							<div class="single__card__title">
+								<h2>Membership</h2>
+							</div>
+							<div class="single__card__text">
+								<p>
+									Join our community of Lawyers engaged in the tech and
+									entrepreneurship space and enjoy LawyersHub member
+									benefits.
+								</p>
+							</div>
+							<div class="single__card__btn">
+								<a class="btn btn--card"> More Details </a>
+							</div>
+						</div>
+						<div
+							class="single__card single__card--two"
+							style="
+								background: url(./assets/images/img/working-space-bg.png);
+								background-size: cover;
+								background-repeat: no-repeat;
+							"
+						>
+							<div class="single__card__icon">
+								<img
+									src="./assets/images/icon/working_space-icon.png"
+									alt=""
+								/>
+							</div>
+							<div class="single__card__title">
+								<h2>Co-Working Space</h2>
+							</div>
+							<div class="single__card__text">
+								<p>
+									Set in Upperhill with close proximity to the Milimani
+									Law Courts, our co-working space offers the ideal
+									space to work & collaborate either daily, weekly or
+									monthly.
+								</p>
+							</div>
+							<div class="single__card__btn">
+								<a class="btn btn--card"> More Details </a>
+							</div>
+						</div>
+					</div>
+					<div class="about__content">
+						<div class="about__content--left">
+							<div class="section__title about__section__title">
+								<h2>About Us</h2>
+							</div>
+							<div class="about__content__description">
+								<p>
+									The Lawyers Hub exists to provide a nexus between Law
+									and Technology and uses technology as a leverage and
+									improve access to justice and the business of law.
+								</p>
+								<p>
+									Community of Lawyers in Africa promoting Access to
+									Justice through Innovation and Technology.
+								</p>
+							</div>
+							<div class="about__content__signature">
+								<img src="./assets/images/img/Linda Bonyo.png" alt="" />
+								<p class="about__content__designation">
+									Founder of the Lawyers Hub
+								</p>
+							</div>
+						</div>
+						<div class="about__content--right">
+							<img src="./assets/images/img/person.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- feature section -->
+			<section class="feature">
+				<div class="container container--sm feature__wrapper">
 					<div class="feature__top">
-						<p>The lawyers’ hub offers the nexus between Tech and the Law in the following ways:
+						<p>
+							The lawyers’ hub offers the nexus between Tech and the Law in
+							the following ways:
 						</p>
 					</div>
-					
+
 					<div class="feature__bottom">
 						<ul>
-							<li><img src="assets/images/icon/tick.svg" alt="image"> <span>Start Up incubation.</span> </li>
-							<li><img src="assets/images/icon/tick.svg" alt="image"> <span>Co-Innovation Space for Lawyers.</span> </li>
-							<li><img src="assets/images/icon/tick.svg" alt="image"> <span>Legal and Policy Support for Startups and innovators.</span> </li>
-							<li><img src="assets/images/icon/tick.svg" alt="image"> <span> Trainings and events.</span></li>
-							<li><img src="assets/images/icon/tick.svg" alt="image"> <span>Mentorship.</span> </li>
+							<li>
+								<img src="assets/images/icon/tick.svg" alt="image" />
+								<span>Start Up incubation.</span>
+							</li>
+							<li>
+								<img src="assets/images/icon/tick.svg" alt="image" />
+								<span>Co-Innovation Space for Lawyers.</span>
+							</li>
+							<li>
+								<img src="assets/images/icon/tick.svg" alt="image" />
+								<span
+									>Legal and Policy Support for Startups and
+									innovators.</span
+								>
+							</li>
+							<li>
+								<img src="assets/images/icon/tick.svg" alt="image" />
+								<span> Trainings and events.</span>
+							</li>
+							<li>
+								<img src="assets/images/icon/tick.svg" alt="image" />
+								<span>Mentorship.</span>
+							</li>
 						</ul>
 					</div>
-			</div>
-		</section>
+				</div>
+			</section>
 
-		<!-- Blog section -->
-		<section class="blog">
-			<div class="container">
-				<div class="blog__wrapper">
+			<!-- Blog section -->
+			<section class="blog">
+				<div class="container">
+					<div class="blog__wrapper">
+						<div class="section__title">
+							<h2>Latest blog</h2>
+						</div>
+						<div class="blog__top">
+							<div class="blog__top--text">
+								<p>
+									You can rely on our stunning team for the latest in
+									the LawTech blogs and taking time to peruse will be
+									great experience for you without a doubt
+								</p>
+							</div>
+						</div>
+						<div class="blog__cards">
+							<div class="blog__cards--single">
+								<div class="blog__cards--single-img">
+									<img src="assets/images/img/blog-1.png" alt="blog" />
+								</div>
+								<div class="blog__cards--single-body">
+									<small>23 June 2020</small>
+									<h3>KENYA’S CHIEF JUSTICE ISSUES ...</h3>
+									<p>
+										PRACTICE NOTES AND DIRECTIONS NO OF 2020 MADE
+										PURSUANT TO SECTION 81(3) OF THE CIVIL PROCEDURE
+										ACT...
+									</p>
+									<a href="#" class="btn btn--card">Read More</a>
+								</div>
+							</div>
+							<div class="blog__cards--single">
+								<div class="blog__cards--single-img">
+									<img src="assets/images/img/blog-1.png" alt="blog" />
+								</div>
+								<div class="blog__cards--single-body">
+									<small>23 June 2020</small>
+									<h3>LOUIS GITINYWA</h3>
+									<p>
+										PRACTICE NOTES AND DIRECTIONS NO OF 2020 MADE
+										PURSUANT TO SECTION 81(3) OF THE CIVIL PROCEDURE
+										ACT...
+									</p>
+									<a href="#" class="btn btn--card">Read More</a>
+								</div>
+							</div>
+							<div class="blog__cards--single">
+								<div class="blog__cards--single-img">
+									<img src="assets/images/img/blog-1.png" alt="blog" />
+								</div>
+								<div class="blog__cards--single-body">
+									<small>23 June 2020</small>
+									<h3>TAXING AFRICA’S DIGITAL ECONOMY...</h3>
+									<p>
+										PRACTICE NOTES AND DIRECTIONS NO OF 2020 MADE
+										PURSUANT TO SECTION 81(3) OF THE CIVIL PROCEDURE
+										ACT...
+									</p>
+									<a href="#" class="btn btn--card">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vector_img">
+					<img src="assets/images/img/Vector.png" alt="vector" />
+				</div>
+			</section>
+
+			<!-- Partner section -->
+			<section class="partner">
+				<div class="container">
 					<div class="section__title">
-						<h2>Latest blog</h2>
+						<h2>Our Partners</h2>
 					</div>
-					<div class="blog__top">
-						<div class="blog__top--text">
-							<p>You can rely on our stunning team for the latest in the LawTech blogs and taking time to peruse will be great experience for you without a doubt</p>
-						</div>
-					</div>
-					<div class="blog__cards">
-						<div class="blog__cards--single">
-							<div class="blog__cards--single-img">
-								<img src="assets/images/img/blog-1.png" alt="blog">
-							</div>
-							<div class="blog__cards--single-body">
-								<small>23 June 2020</small>
-								<h3>KENYA’S CHIEF JUSTICE ISSUES ...</h3>
-								<p>PRACTICE NOTES AND DIRECTIONS NO OF 2020 MADE PURSUANT TO SECTION 81(3) OF THE CIVIL PROCEDURE ACT...</p>
-								<a href="#" class="btn btn--card">Read More</a>
-							</div>
-						</div>
-						<div class="blog__cards--single" >
-							<div class="blog__cards--single-img">
-								<img src="assets/images/img/blog-2.png" alt="blog">
-							</div>
-							<div class="blog__cards--single-body">
-								<small>23 June 2020</small>
-								<h3>LOUIS GITINYWA</h3>
-								<p>PRACTICE NOTES AND DIRECTIONS NO OF 2020 MADE PURSUANT TO SECTION 81(3) OF THE CIVIL PROCEDURE ACT...</p>
-								<a href="#" class="btn btn--card">Read More</a>
-							</div>
-						</div>
-						<div class="blog__cards--single">
-							<div class="blog__cards--single-img">
-								<img src="assets/images/img/blog-3.png" alt="blog">
-							</div>
-							<div class="blog__cards--single-body">
-								<small>23 June 2020</small>
-								<h3>TAXING AFRICA’S DIGITAL ECONOMY...</h3>
-								<p>PRACTICE NOTES AND DIRECTIONS NO OF 2020 MADE PURSUANT TO SECTION 81(3) OF THE CIVIL PROCEDURE ACT...</p>
-								<a href="#" class="btn btn--card">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			<!-- <div class="vector_img">
-				<img src="assets/images/img/Vector.png" alt="vector">
-			</div> -->
-		</section>
-
-		<!-- Partner section -->
-		<section class="partner">
-			<div class="container">
-				<div class="section__title">
-					<h2>Our Partners</h2>
-				</div>
 					<div class="partner__brands">
 						<div class="partner__brands--single">
-							<img src="./assets/images/icon/brand-1.svg" alt="">
+							<img src="./assets/images/icon/brand-1.svg" alt="" />
 						</div>
 						<div class="partner__brands--single">
-							<img src="./assets/images/icon/brand-2.svg" alt="">
+							<img src="./assets/images/icon/brand-2.svg" alt="" />
 						</div>
 						<div class="partner__brands--single">
-							<img src="./assets/images/icon/brand-3.svg" alt="">
+							<img src="./assets/images/icon/brand-3.svg" alt="" />
 						</div>
 						<div class="partner__brands--single">
-							<img src="./assets/images/icon/brand-4.svg" alt="">
+							<img src="./assets/images/icon/brand-4.svg" alt="" />
 						</div>
 					</div>
-			</div>
-		</section>
-	</main>
+				</div>
+			</section>
+		</main>
 
-	<!-- Footer Section -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__widgets">
-				<div class=" footer__widget footer__widget--one">
-					<h2 class="footer__widget__title">
-						Adress
-					</h2>
-					<div class="footer__widget__text">
-						<p>Bishop Road First Ngong <br> Ave, Nairobi, Kenya</p>
+		<!-- Footer Section -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__widgets">
+					<div class="footer__widget footer__widget--one">
+						<h2 class="footer__widget__title">Adress</h2>
+						<div class="footer__widget__text">
+							<p>
+								Bishop Road First Ngong <br />
+								Ave, Nairobi, Kenya
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="footer__widget footer__widget--two">
-					<h2 class="footer__widget__title">
-						Contact
-					</h2>
-					<div class="footer__widget__text">
-						<p>Email: info@lawyershub.ke 
-							<br>
-							Phone: +254 784 840 228</p>
+					<div class="footer__widget footer__widget--two">
+						<h2 class="footer__widget__title">Contact</h2>
+						<div class="footer__widget__text">
+							<p>
+								Email: info@lawyershub.ke
+								<br />
+								Phone: +254 784 840 228
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="footer__widget footer__widget--three">
-					<h2 class="footer__widget__title">
-						Newsletter
-					</h2>
-					<div class="footer__widget__text">
-						<p>Stay updated by subscribing to <br>our newsletter</p>
-						<form class="footer__form">
-							<input type="email" name="" id="" placeholder="youraddress@gmail.com">
-							<input class="btn btn--form" type="submit" value="Subscribe">
-						</form>
+					<div class="footer__widget footer__widget--three">
+						<h2 class="footer__widget__title">Newsletter</h2>
+						<div class="footer__widget__text">
+							<p>Stay updated by subscribing to <br />our newsletter</p>
+							<form class="footer__form">
+								<input
+									type="email"
+									name=""
+									id=""
+									placeholder="youraddress@gmail.com"
+								/>
+								<input
+									class="btn btn--form"
+									type="submit"
+									value="Subscribe"
+								/>
+							</form>
+						</div>
 					</div>
-				</div>
-				<div class="footer__widget footer__widget--four">
-					<h2 class="footer__widget__title">
-						Follow Us
-					</h2>
-					<div class="footer__widget__text">
-						<ul>
-							<li><a href=""><img src="./assets/images/icon/Path.svg" alt=""></a></li>
-							<li><a href=""><img src="./assets/images/icon/twitter.svg" alt=""></a></li>
-							<li><a href=""><img src="./assets/images/icon/linkedIn.svg" alt=""></a></li>
-							<li><a href=""><img src="./assets/images/icon/instagram.svg" alt=""></a></li>
-						</ul>
+					<div class="footer__widget footer__widget--four">
+						<h2 class="footer__widget__title">Follow Us</h2>
+						<div class="footer__widget__text">
+							<ul>
+								<li>
+									<a href=""
+										><img src="./assets/images/icon/Path.svg" alt=""
+									/></a>
+								</li>
+								<li>
+									<a href=""
+										><img
+											src="./assets/images/icon/twitter.svg"
+											alt=""
+									/></a>
+								</li>
+								<li>
+									<a href=""
+										><img
+											src="./assets/images/icon/linkedIn.svg"
+											alt=""
+									/></a>
+								</li>
+								<li>
+									<a href=""
+										><img
+											src="./assets/images/icon/instagram.svg"
+											alt=""
+									/></a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer__svg footer__svg--left">
-			<img src="./assets/images/icon/footer_left.svg" alt="">
-		</div>
-		<div class="footer__svg footer__svg--right">
-			<img src="./assets/images/icon/footer-right.svg" alt="">
-		</div>
-	</footer>
+			<div class="footer__svg footer__svg--left">
+				<img src="./assets/images/icon/footer_left.svg" alt="" />
+			</div>
+			<div class="footer__svg footer__svg--right">
+				<img src="./assets/images/icon/footer-right.svg" alt="" />
+			</div>
+		</footer>
 
-	<script src="assets/js/main.js"></script>
-</body>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
