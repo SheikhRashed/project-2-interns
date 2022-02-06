@@ -79,6 +79,12 @@
     margin: 0 auto;
     padding:0 20px;
 }
+.menu{
+  display: none;
+}
+.mobile_menu {
+  display: block;
+}
 // About Section Start
 .about{
     .about__card__wrapper{
@@ -225,7 +231,12 @@
     margin: 0 auto;
     padding:0 20px;
 }
-
+.menu{
+  display: none;
+}
+.mobile_menu {
+  display: block;
+}
 // About Section Start
 .about{
     .about__card__wrapper{
