@@ -20,16 +20,15 @@
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap:20px;
-        @include max(768px){
+        @include max(767px){
             grid-gap:15px;
-        }
-        @include max(540px){
             grid-template-columns: 1fr 1fr;
-            grid-gap:15px;
         }
-        @include max(539px){
+        @include max(525px){
             grid-template-columns: 1fr;
+            grid-gap: 25px;
         }
+        
         .blog__card{
             
             background-color: #ffffff;
