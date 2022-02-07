@@ -4,12 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>LAWYERS HUB</title>
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<section style="background: url(./assets/images/img/Banner-bg.png)">
+		<section class="banner-bg" style="background: url(./assets/images/img/Banner-bg.png);
+		background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center center;">
 			<header class="header">
 			<div class="header__top">
 				<div class="container header__top-wrap">
@@ -81,6 +86,9 @@
 								<li><a href="#">Contacts</a></li>
 							</ul>
 						</nav>
+						<div onclick="mobileMenu()" id="navbar-icon">
+							<i class="fas fa-bars"></i>
+						</div>
 					</div>
 				</div>
 			</div>
