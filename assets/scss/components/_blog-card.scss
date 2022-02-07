@@ -22,13 +22,12 @@
         grid-gap:20px;
         @include max(768px){
             grid-gap:15px;
-        }
-        @include max(540px){
             grid-template-columns: 1fr 1fr;
-            grid-gap:15px;
         }
-        @include max(539px){
+        
+        @include max(525px){
             grid-template-columns: 1fr;
+            grid-gap:30px;
         }
         .blog__card{
             
@@ -36,6 +35,9 @@
             &-thumb{
                 width: 100%;
                 height: 150px;
+                @include max(525px){
+                    height: 200px;
+                }
                 a{
                     width: 100%;
                     height: 100%;
@@ -55,6 +57,7 @@
                     line-height: 19px;
                     color: #545454;
                     padding: 10px 0;
+                    display: block;
                 }
                 a{
                     h3{
