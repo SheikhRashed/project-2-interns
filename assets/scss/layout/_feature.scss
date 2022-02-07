@@ -3,7 +3,7 @@
         background-color: #ffffff;
     }
     &__content{
-        padding: 50px 100px;
+        
         @include max(768px){
             padding: 25px 30px;
         }
@@ -11,17 +11,24 @@
        
         position: relative;
         margin-top: -54px;
-        @include max(767px){
+        @include max(912px){
+            margin-top: -35px;
+        }
+        @include max(768px){
             margin-top: 0;
         }
         &-top{
             width: 80%;
-            @include max(767px){
+            @include max(912px){
                 width: 100%;
             }
+
             p{
                 padding-bottom: 30px;
                 padding-right: 30px;
+                @include max(412px){
+                    padding-right: 0; 
+                }
                 font-family: 'Nunito Sans', sans-serif;
                 font-style: normal;
                 font-weight: 400;
@@ -36,16 +43,23 @@
                     column-count: 1;
                 }
                 li{
+                    line-height: 25px;
                     display: flex;
-                    justify-items: center;
-                    align-items: center;
+                    position: relative;
+                    left:13px;
                     padding: 10px 10px;
-                    @include max(767px){
+                    @include max(768px){
                         padding: 5px 0;
+                        left:30px;
                     }
                     line-height: 25px;
                     img{
-                        padding-right: 10px;
+                        position: absolute;
+                        left: -15px;
+                        @include max(768px){
+                            left: -30px;
+                        }
+                        
                     }
                 }
             }
