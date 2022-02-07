@@ -119,6 +119,12 @@ ol {
   background-color: #000;
 }
 
+.banner-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .header {
   position: relative;
   top: 0;
@@ -299,6 +305,8 @@ ol {
   right: 0;
   top: 0;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-section .hero-section__content {
