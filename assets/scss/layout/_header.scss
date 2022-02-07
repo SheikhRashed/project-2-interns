@@ -28,6 +28,7 @@
         ul{
             display: flex;
             align-items: center;
+
             li{
                 padding-right: 36px;
                 
@@ -63,6 +64,15 @@
         align-items: center;
         padding: 40px 0;
         position: relative;
+        .header__nav-logo{
+            @include max(767px){
+                a{
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
         #navbar-icon{
             color: #fff;
             border: 1px solid #fff;

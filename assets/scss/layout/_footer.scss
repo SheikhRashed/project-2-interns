@@ -1,0 +1,19 @@
+.footer{
+    background: #000;
+    .footer__widgets{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .footer__widget-item{
+            flex: 0 0 25%;
+            color: #fff;
+            @include max(991px){
+                flex: 0 0 50%;
+            }
+            @include max (525px){
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
