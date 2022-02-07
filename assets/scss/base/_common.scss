@@ -35,43 +35,7 @@ img {
 	max-width: 100%;
 	object-fit: cover;
 }
-.btn {
-	background-color: $bg-btn;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 700;
-	transition: all ease 0.3s;
-	width: 175px;
-	height: 46px;
-	text-align: center;
-	&:hover {
-		background-color: #000;
-	}
-}
-.section__title {
-	h2 {
-		font-family: 'Source Code Pro', monospace;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 25px;
-		padding-bottom: 10px;
-		&::after {
-			content: '';
-			display: block;
-			clear: both;
-			width: 30px;
-			height: 4px;
-			margin-top: 10px;
-			background: #0d90c2;
-		}
-	}
-}
 
-.btn--card {
-	margin-top: 25px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 45px auto;
-}
+
+
+

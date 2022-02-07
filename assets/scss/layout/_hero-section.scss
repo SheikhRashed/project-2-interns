@@ -1,43 +1,31 @@
-.hero__section {
-	background-image: url(../images/img/Banner-bg.png);
-	width: 100%;
-	//min-height: 1100px;
-	// height: 100vh;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	.hero__content {
-		padding: 230px 40px;
-		.hero__title {
-			font-size: 70px;
-			font-weight: 700;
-			line-height: 80px;
-		}
-		.hero__sub__title {
-			font-size: 28px;
-			line-height: 46px;
-			font-weight: 700;
-		}
-		.hero__text {
-			font-size: 18px;
-			font-weight: 400;
-			line-height: 29px;
-		}
-
-		.hero__btn__wrapper {
-			margin: 25px 0;
-			text-align: center;
-			.btn--meet-our-team {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 0 auto;
-			}
-		}
-	}
+.hero-section{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    .hero-section__content{
+        padding: 120px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        h1{
+            font-family: 'Source Code Pro', monospace;
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 112px;
+        }
+        h3{
+            font-family: 'Source Code Pro', monospace;
+            font-weight: bold;
+            font-size: 33px;
+            line-height: 46px;
+        }
+        p{
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 21px;
+            line-height: 29px;
+        }
+    }
 }

@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
 *,
 *::after,
 *::before {
@@ -9,10 +11,38 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Nunito', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #f5f5f5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Source Code Pro', monospace;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 12px;
+	@include max(1200px) {
+		max-width: 100%;
+	}
+	&--sm {
+		max-width: 920px;
+	}
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
 a {
 	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
 	&:hover,
 	&:active {
 		text-decoration: none;
@@ -34,4 +64,21 @@ button {
 ul,
 ol {
 	list-style: none;
+}
+.section__title{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+	text-transform: uppercase;
+	&::after{
+		content: "";
+		display: block;
+		clear: both;
+		width: 31px;
+		height: 4px;
+		background: #0D90C2;
+		margin-top: 5px;
+	}
 }
