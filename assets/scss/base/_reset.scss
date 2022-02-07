@@ -23,15 +23,16 @@ h6 {
 	font-family: 'Source Code Pro', monospace;
 }
 .container {
-	max-width: 100%;
+	max-width: 80%;
 	margin: 0 auto;
 	padding: 0 12px;
-	@include min(768px) {
-		max-width: 80%;
+	@include max(768px) {
+		max-width: 100%;
 	}
-	&--sm {
-		max-width: 920px;
-	}
+	
+}
+.container-inner{
+	padding: 50px 50px;
 }
 
 img {
