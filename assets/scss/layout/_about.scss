@@ -2,6 +2,11 @@
     .about-section__cards{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @include max(767px){
+        flex-direction: column;
+
+    }
         .about__cards-single{
             flex: 0 0 48%;
             color: #fff;
@@ -9,12 +14,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-top: -60px;
+            @include max(767px){
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
             &-icon{
                 padding-top: 45px;
             }
             &-content{
                 text-align: center;
                 padding: 0 60px;
+                @include max(991px){
+                    padding: 0 10px;
+                }
                 h2{
                     padding: 10px 0;
                 }
@@ -28,8 +41,15 @@
         padding-top: 80px;
         padding-bottom: 50px;
         color: #fff;
+        flex-wrap: wrap;
+        @include max(767px){
+            flex-direction: column-reverse;
+        }
         &-left, &-right{
             flex: 0 0 48%;
+            @include max(767px){
+                flex: 0 0 100%;
+            }
         }
         &-left {
             .section__title{
