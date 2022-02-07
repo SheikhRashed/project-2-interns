@@ -17,17 +17,47 @@
             font-weight: bold;
             font-size: 80px;
             line-height: 112px;
+            text-align: center;
+            @include max(767px){
+                font-size: 64px;
+            }
+            @include max(525px){
+                font-size: 56px;
+                line-height: 64px;
+            }
+            @include max(480px){
+                font-size: 48px;
+                line-height: 56px;
+            }
         }
         h3{
             font-family: 'Source Code Pro', monospace;
             font-weight: bold;
             font-size: 33px;
             line-height: 46px;
+            text-align: center;
+            @include max(767px){
+                font-size: 28px;
+            }
+            @include max(480px){
+                font-size: 20px;
+            }
         }
         p{
             font-family: 'Nunito Sans', sans-serif;
             font-size: 21px;
             line-height: 29px;
+            text-align: center;
+            @include max(767px){
+                font-size: 18px;
+                br{
+                    display: none;
+                }
+            }
+            @include max(480px){
+                font-size: 16px;
+                
+            }
         }
     }
 }

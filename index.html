@@ -11,10 +11,8 @@
 	</head>
 
 	<body>
-		<section class="banner-bg" style="background: url(./assets/images/img/Banner-bg.png);
-		background-size: cover;
-    	background-repeat: no-repeat;
-    	background-position: center center;">
+		<section style="background: url(./assets/images/img/Banner-bg.png) center center/cover no-repeat
+		">
 			<header class="header">
 			<div class="header__top">
 				<div class="container header__top-wrap">
@@ -58,7 +56,7 @@
 							/></a>
 						</li>
 					</ul>
-						<a  class="membership" href="#"
+						<a  class="btn btn-membership" href="#"
 							><img src="assets/images/icon/star.svg" alt="" />
 							Join Our Membership</a>
 				</div>
@@ -87,7 +85,7 @@
 							</ul>
 						</nav>
 						<div onclick="mobileMenu()" id="navbar-icon">
-							<i class="fas fa-bars"></i>
+							<i class="fas fa-bars 2x"></i>
 						</div>
 					</div>
 				</div>
@@ -330,10 +328,12 @@
 			<div class="container container-inner">
 				<div class="footer__widgets">
 					<div class="footer__widget-item">
-						<h2 class="footer__widget__title">Adress</h2>
+						<h2 class="footer__widget__title">Address</h2>
 						<div class="footer__widget__text">
 							<p>
-								Bishop Road First Ngong <br />
+								Bishop Road First Ngong 
+							</p>
+							<p>
 								Ave, Nairobi, Kenya
 							</p>
 						</div>
@@ -343,7 +343,8 @@
 						<div class="footer__widget__text">
 							<p>
 								Email: info@lawyershub.ke
-								<br />
+							</p>
+							<p>	
 								Phone: +254 784 840 228
 							</p>
 						</div>
@@ -361,7 +362,7 @@
 								/>
 								<button
 									type="submit"
-									id="btn submit-btn">Subscribe</button>
+									class="btn submit-btn">Subscribe</button>
 								
 							</form>
 						</div>
@@ -401,12 +402,12 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="footer__svg footer__svg--left">
+			<div class="footer__svg footer__svg--left">
 				<img src="./assets/images/icon/footer_left.svg" alt="" />
 			</div>
 			<div class="footer__svg footer__svg--right">
 				<img src="./assets/images/icon/footer-right.svg" alt="" />
-			</div> -->
+			</div>
 		</footer>
 
 		<script src="assets/js/main.js"></script>
