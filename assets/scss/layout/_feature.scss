@@ -7,9 +7,7 @@
         @include max(768px){
             padding: 25px 30px;
         }
-        @include min(767px){
-            padding: 25px 20px;
-        }
+        
        
         position: relative;
         margin-top: -54px;

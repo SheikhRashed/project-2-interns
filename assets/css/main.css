@@ -491,12 +491,6 @@ ol {
   }
 }
 
-@media (min-width: 767px) {
-  .feature__content {
-    padding: 25px 20px;
-  }
-}
-
 @media (max-width: 767px) {
   .feature__content {
     margin-top: 0;
