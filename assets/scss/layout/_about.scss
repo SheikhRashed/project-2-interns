@@ -42,7 +42,7 @@
                     text-align: center;
                     padding: 0 20px;
                     @include max(767px){
-                        padding: 0 40px;
+                        padding: 0 20px;
                     }
                 }
             }
@@ -68,7 +68,7 @@
         &-left {
             .section__title{
                 color: #fff;
-                padding: 0 10px;
+                padding: 10px 0;
                 &::after{
                     background: #fff;
                 }
