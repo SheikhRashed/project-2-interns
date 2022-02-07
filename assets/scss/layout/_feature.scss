@@ -1,0 +1,57 @@
+.feature{
+    .container{
+        background-color: #ffffff;
+    }
+    &__content{
+        padding: 50px 100px;
+        @include max(768px){
+            padding: 25px 30px;
+        }
+        @include min(767px){
+            padding: 25px 20px;
+        }
+       
+        position: relative;
+        margin-top: -54px;
+        @include max(767px){
+            margin-top: 0;
+        }
+        &-top{
+            width: 80%;
+            @include max(767px){
+                width: 100%;
+            }
+            p{
+                padding-bottom: 30px;
+                padding-right: 30px;
+                font-family: 'Nunito Sans', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+        &-list{
+            ul {
+                column-count: 2;
+                @include max(767px){
+                    column-count: 1;
+                }
+                li{
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                    padding: 10px 10px;
+                    @include max(767px){
+                        padding: 5px 0;
+                    }
+                    line-height: 25px;
+                    img{
+                        padding-right: 10px;
+                    }
+                }
+            }
+           
+        }
+    }
+}
