@@ -7,9 +7,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     .hero-section__content{
-        padding: 120px 0;
+        padding-top: 120px;
+        padding-bottom: 200px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         color: #fff;
         h1{

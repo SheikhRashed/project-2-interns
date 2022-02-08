@@ -105,20 +105,8 @@ ol {
   font-weight: 700;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
-  width: 175px;
-  height: 46px;
+  padding: 15px 30px;
   text-align: center;
-  margin-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 45px auto;
 }
 
 .btn:hover {
@@ -224,6 +212,10 @@ ol {
   font-size: 16px;
   line-height: 26px;
   text-transform: lowercase;
+}
+
+.blog-section .blog__cards-wrap .blog__card-content .btn-card {
+  margin: 30px 0px;
 }
 
 .header {
@@ -374,7 +366,7 @@ ol {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .header .header__nav-wrap .header__nav-logo a img {
     width: 70%;
   }
@@ -411,46 +403,52 @@ ol {
   display: block;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .header .header__nav-wrap .header__nav-menu {
     display: none;
   }
 }
 
-.header .header__nav-wrap .header__nav-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header .header__nav-wrap .header__nav-menu ul li {
-  padding-right: 20px;
+  display: inline-block;
 }
 
-.header .header__nav-wrap .header__nav-menu ul li:last-child {
-  padding-right: 0px;
+.header .header__nav-wrap .header__nav-menu ul li a {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.header .header__nav-wrap .header__nav-menu ul li:last-child a {
+  margin-right: 0px;
+}
+
+.header .header__nav-wrap .header__nav-menu ul li:first-child a {
+  margin-left: 0px;
 }
 
 @media (max-width: 991px) {
   .header .header__nav-wrap .header__nav-menu ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: absolute;
     background-color: #fff;
-    padding: 20px 0;
     top: 100px;
     left: 0;
     right: 0;
     z-index: 3;
   }
   .header .header__nav-wrap .header__nav-menu ul li {
+    display: block;
     padding: 10px 0;
     text-align: center;
+    border-bottom: 1px solid #000;
   }
   .header .header__nav-wrap .header__nav-menu ul li a {
     color: #000;
+  }
+  .header .header__nav-wrap .header__nav-menu ul li:first-child a {
+    margin-left: 10px;
+  }
+  .header .header__nav-wrap .header__nav-menu ul li:last-child a {
+    margin-right: 10px;
   }
 }
 
@@ -465,7 +463,8 @@ ol {
 }
 
 .hero-section .hero-section__content {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,6 +472,9 @@ ol {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -559,6 +561,7 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -80px;
 }
 
 @media (max-width: 767px) {
@@ -567,6 +570,7 @@ ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 0px;
   }
 }
 
@@ -588,12 +592,11 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -60px;
+  height: 450px;
 }
 
 @media (max-width: 767px) {
   .about-section .about-section__cards .about__cards-single {
-    margin-top: 0px;
     margin-bottom: 20px;
   }
 }
@@ -615,6 +618,16 @@ ol {
 
 .about-section .about-section__cards .about__cards-single-content h2 {
   padding: 10px 0;
+}
+
+.about-section .about-section__cards .about__cards-single-content p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.about-section .about-section__cards .about__cards-single-content .btn-card {
+  margin: 30px 0px;
 }
 
 .about-section .about__content {
@@ -794,6 +807,8 @@ ol {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 80px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 480px) {
@@ -805,6 +820,7 @@ ol {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    justify-items: center;
   }
 }
 
