@@ -24,12 +24,25 @@
             }
             &-content{
                 text-align: center;
-                padding: 0 60px;
-                @include max(991px){
-                    padding: 0 10px;
-                }
                 h2{
                     padding: 10px 0;
+                    font-family: 'Source Code Pro', monospace;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                p{
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                    padding: 0 20px;
+                    @include max(767px){
+                        padding: 0 20px;
+                    }
                 }
                 p{
                     font-family:"Nunito", sans-serif;
@@ -62,6 +75,7 @@
         &-left {
             .section__title{
                 color: #fff;
+                padding: 10px 0;
                 &::after{
                     background: #fff;
                 }

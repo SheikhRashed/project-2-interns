@@ -24,9 +24,10 @@
             grid-gap:15px;
             grid-template-columns: 1fr 1fr;
         }
+        
         @include max(525px){
             grid-template-columns: 1fr;
-            grid-gap: 25px;
+            grid-gap:30px;
         }
         
         .blog__card{
@@ -35,12 +36,28 @@
             &-thumb{
                 width: 100%;
                 height: 150px;
+                
                 a{
+                    display: block;
                     width: 100%;
                     height: 100%;
                     img{
                         height: 100%;
                         width: 100%;
+                       
+                    }
+                }
+                @include max(525px){
+                    height: 170px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                           
+                        }
                     }
                 }
             }
@@ -54,6 +71,7 @@
                     line-height: 19px;
                     color: #545454;
                     padding: 10px 0;
+                    display: block;
                 }
                 a{
                     h3{

@@ -9,6 +9,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include max(414px){
+            display: none;
+        }
     }
     &-left{
         ul{
