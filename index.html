@@ -6,12 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>LAWYERS HUB</title>
-		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- CSS link  -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
 	</head>
 
 	<body>
-		<section style="background: url(./assets/images/img/Banner-bg.png) center center/cover no-repeat
+		<section
+		 class="parallax-bg"
+		 data-swiper-parallax="-23%"
+		 style="background: url(./assets/images/img/Banner-bg.png) center center/cover no-repeat
 		">
 			<header class="header">
 			<div class="header__top">
@@ -92,20 +99,46 @@
 			</div>
 		</header>
 
-		<section class="hero-section">
-			<div class="container">
-				<div class="hero-section__content">
-					<h1>LAWYERS HUB</h1>
-					<h3>A NEXUS BETWEEN LAW AND TECH</h3>
-					<p>
+		<section class="hero-section container swiper mySwiper">
+			<div class=" swiper-wrapper">
+				<div class="hero-section__content swiper-slide">
+					<h1 class="title" data-swiper-parallax="-300">LAWYERS HUB</h1>
+					<h3 class="subtitle" data-swiper-parallax="-200">A NEXUS BETWEEN LAW AND TECH</h3>
+					<p class="text" data-swiper-parallax="-100">
 						We are a Community of Lawyers in Africa promoting <br />
 						Access to Justice through Innovation and Technology.
 					</p>
-					<div class="hero-section__btn">
+					<div class="hero-section__btn" data-swiper-parallax="-100">
 						<a  class="btn" href="#" class="">Meet Our Team</a>
 					</div>
 				</div>
+				<div class="hero-section__content swiper-slide">
+					<h1 class="title" data-swiper-parallax="-300">LAWYERS HUB 2</h1>
+					<h3 data-swiper-parallax="-200">A NEXUS BETWEEN LAW AND TECH</h3>
+					<p data-swiper-parallax="-100">
+						We are a Community of Lawyers in Africa promoting <br />
+						Access to Justice through Innovation and Technology.
+					</p>
+					<div class="hero-section__btn" data-swiper-parallax="-100">
+						<a  class="btn" href="#" class="">Meet Our Team</a>
+					</div>
+				</div>
+				<div class="hero-section__content swiper-slide">
+					<h1 data-swiper-parallax="-300">LAWYERS HUB 3</h1>
+					<h3 data-swiper-parallax="-200">A NEXUS BETWEEN LAW AND TECH</h3>
+					<p data-swiper-parallax="-100">
+						We are a Community of Lawyers in Africa promoting <br />
+						Access to Justice through Innovation and Technology.
+					</p>
+					<div class="hero-section__btn" data-swiper-parallax="-100">
+						<a  class="btn" href="#" class="">Meet Our Team</a>
+					</div>
+				</div>
+				
 			</div>
+			<div class="swiper-button-next"></div>
+      			<div class="swiper-button-prev"></div>
+      			<div class="swiper-pagination"></div>
 		</section>
 		</section>
 
@@ -418,7 +451,9 @@
 				<img src="./assets/images/icon/footer-right.svg" alt="" />
 			</div>
 		</footer>
-
+		<!-- JS file link -->
+		<script src="assets/js/swiper/swiper.min.js"></script>
 		<script src="assets/js/main.js"></script>
+		
 	</body>
 </html>

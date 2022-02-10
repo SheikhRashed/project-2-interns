@@ -557,6 +557,7 @@ ol {
   font-size: 21px;
   line-height: 29px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -572,6 +573,10 @@ ol {
   .hero-section .hero-section__content p {
     font-size: 16px;
   }
+}
+
+.hero-section .swiper-pagination {
+  bottom: 100px;
 }
 
 .about-section .about-section__cards {
@@ -615,12 +620,7 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< HEAD
   height: 450px;
-=======
-  margin-top: -100px;
-  height: 370px;
->>>>>>> 44b32e46ffa33b0ac0a51db53f8012fd15637168
 }
 
 @media (max-width: 767px) {
